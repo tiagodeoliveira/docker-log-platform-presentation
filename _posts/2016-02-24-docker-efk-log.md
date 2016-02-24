@@ -3,7 +3,12 @@ title: "Building an EFK log platform with Docker"
 tags: [docker, efk, elk, rancher, elasticsearch, fluentd, kibana]
 ---
 
-# Building an EFK log platform with Docker
+Building an EFK log platform with Docker
+========================================
+
+[Tiago Oliveira](http://github.com/tiagodeoliveira)
+
+Software Architect - [Zenvia](http://zenvia.com)
 
 ---
 
@@ -43,6 +48,8 @@ tags: [docker, efk, elk, rancher, elasticsearch, fluentd, kibana]
 
 ### EFK
 
+Elasticsearch - Fluentd - Kibana
+
 * Fluentd: written in cRuby, core functions (I/O) written in C;
 * Kafka
   * High throughput
@@ -57,13 +64,13 @@ tags: [docker, efk, elk, rancher, elasticsearch, fluentd, kibana]
 
 --
 
-The entire stack is made to be scalable, we need a platform that allows that in a matter of seconds
+The entire stack is made to be scalable, we need a platform that allows it on a matter of seconds
 
-If we want to react to events like loading/backpressure/out of resources... we need to do that fast
+If we want to react to events, like loading/backpressure/out of resources... we need to do that fast
 
 We need to use all the computacional resources, computacional density
 
-Log is not our core business, we cannot aford dummy fails, it need to be secure (immutable)
+Log is not our core business, we cannot afford dummy fails, it need to be secure (immutable)
 
 ---
 
@@ -94,18 +101,24 @@ Log is not our core business, we cannot aford dummy fails, it need to be secure 
 
 ![log](../images/log-platform.png)
 
+--
+
+![log](../images/log-platform-diagram.png)
+
 ---
 
 # How to react?
 
 --
 
+## #TODO
+
 * Statsd + Graphite + Influxdb
 * Graphite beacon?
 * Zabbix?
 * Rancher?
 
-What matters is that now things got a lot more easier!!
+What matters is that now things got a lot easier!!
 
 ---
 
